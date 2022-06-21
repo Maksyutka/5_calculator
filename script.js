@@ -31,7 +31,7 @@ numBtn.forEach(function (btn) {
 			displaySelector.innerHTML = displaySelector.innerHTML;
 		} else if (contains(displayLastNumber, ".") && btn.id == "dot") {
 			displaySelector.innerHTML = displaySelector.innerHTML;
-		} else if (!contains(displayLastNumber, ".") && contains(displayLastNumber, "0") && btn.innerHTML == "0") {
+		} else if (!contains(displayLastNumber, ".") && displayLastNumber.split("")[0] == 0 && displayLastNumber.split("")[1] == undefined && btn.innerHTML == "0") {
 			displaySelector.innerHTML = displaySelector.innerHTML;
 		} else if (equalIndex == false) {
 			displaySelector.innerHTML += btn.innerHTML;
